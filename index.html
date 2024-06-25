@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>123admission</title>
+
+    <!-- Link Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link your custom CSS file -->
+    <link href="index.css" rel="stylesheet">
+    <style>
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="studyabroad">
+
+        <div class="row">
+
+            <div class="col-lg-12 hh">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hj">
+                            <div class="logo">
+                                <img src="./assets/Logo/Logo.svg" />
+                            </div>
+                            <div class="apl">
+                                <button class="btn btn-primary" data-toggle="modal"
+                                    data-target="#applicationModal">Apply</button>
+                                <button class="btn">+91 9940762388</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+
+                        <div class="content">
+                            <h1>Study Abroad</h1>
+                            <h3 style="margin-top: 30px;">Expand Your Horizons, Enrich Your Mind, and Flourish Abroad
+                                with
+                                Our
+                                Study Programs</h3>
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="header-p">
+                            <form id="applicationForm"
+                                style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 1px 1px 12px black;">
+                                <div class="row">
+                                    <div class="col-12 mt-3 mb-3" style="text-align: center;">
+                                        <h5>International Degree Now in Your Budget</h5>
+                                    </div>
+                                    <div class="col-12">
+                                        <div
+                                            style="text-align: center; font-size: 19px; font-weight: 600; color: #17a184;">
+                                            Degree Interested in<span>*</span>
+                                        </div>
+                                        <div class="d-flex kkkkk">
+                                            <button id="mastersButton" class="btns">Masters</button>
+                                            <button id="bachelorsButton" class="btns">Bachelors</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 mt-3">
+                                        <label for="name">Name:<span>*</span></label>
+                                    </div>
+                                    <div class="col-9 mt-3">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="col-3 mt-3">
+                                        <label for="email">Email:<span>*</span></label>
+                                    </div>
+                                    <div class="col-9 mt-3">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="col-3 mt-3">
+                                        <label for="number">Mobile:<span>*</span></label>
+                                    </div>
+                                    <div class="col-9 mt-3 mb-3">
+                                        <input type="tel" class="form-control" id="contact" name="contact"
+                                            placeholder="Enter your phone number" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12"
+                                        style="display: flex; justify-content: center; margin-bottom: 10px;">
+                                        <button type="submit" class="btn btn-primary btn-block"
+                                            style="background-color: #17a184; width: 100%;">Book Your Free
+                                            Counseling</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row uuu">
+            <div class="col-lg-12 ">
+
+                <div class="bhn">
+                    <h1>Top Countries</h1>
+                    <div class="card-group">
+                        <div class="card" data-toggle="modal" data-target="#applicationModal">
+                            <img src="./assets/country/uk 2.svg" class="card-img-top" alt="USA">
+                            <div class="card-body">
+                                <h5 class="card-title">Uk</h5>
+                            </div>
+                        </div>
+                        <div class="card" data-toggle="modal" data-target="#applicationModal">
+                            <img src="./assets/country/Untitled design (3) 2.svg" class="card-img-top" alt="USA">
+                            <div class="card-body">
+                                <h5 class="card-title">USA</h5>
+                            </div>
+                        </div>
+                        <div class="card" data-toggle="modal" data-target="#applicationModal">
+                            <img src="./assets/country/GE 1.svg" class="card-img-top" alt="Germany">
+                            <div class="card-body">
+                                <h5 class="card-title">Germany</h5>
+                            </div>
+                        </div>
+                        <div class="card" data-toggle="modal" data-target="#applicationModal">
+                            <img src="./assets/country/Fr 1.svg" class="card-img-top" alt="France">
+                            <div class="card-body">
+                                <h5 class="card-title">France</h5>
+                            </div>
+                        </div>
+                        <div class="card" data-toggle="modal" data-target="#applicationModal">
+                            <img src="./assets/country/Untitled design (4) 2.svg" class="card-img-top" alt="Canada">
+                            <div class="card-body">
+                                <h5 class="card-title">Canada</h5>
+                            </div>
+                        </div>
+                        <div class="card" data-toggle="modal" data-target="#applicationModal">
+                            <img src="./assets/country/Untitled design (5) 2.svg" class="card-img-top" alt="Finland">
+                            <div class="card-body">
+                                <h5 class="card-title">Finland</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="btn0poi">
+                        <button class="btn btn-primary" id="prevButton" style="display: none;">→</button>
+                        <button class="btn btn-primary" id="nextButton">→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-12 mt-3 hjjk">
+                        <div class="clark">
+                            <h1>Our Knowledge Partners</h1>
+                        </div>
+                        <div class="slider">
+                            <div class="item"><img alt="logo" src='./assets/UniversityLogo/Andhra University.png' />
+                            </div>
+                            <div class="item"><img alt="logo"
+                                    src='./assets/UniversityLogo/bharathidasan-university.png' />
+                            </div>
+                            <div class="item"><img alt="logo" src='./assets/UniversityLogo/BIMTECH.png' />
+                            </div>
+                            <div class="item"><img alt="logo" src='./assets/UniversityLogo/Deakin University.png' />
+                            </div>
+                            <div class="item"><img alt="logo"
+                                    src='./assets/UniversityLogo/Golden Gate University.png' />
+                            </div>
+                            <div class="item"><img alt="logo" src='./assets/UniversityLogo/IIIT Bangalore.png' />
+                            </div>
+                            <div class="item"><img alt="logo" src='./assets/UniversityLogo/Jain.png' />
+                            </div>
+                            <div class="item"><img alt="logo" src='./assets/UniversityLogo/LIBA.png' />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Application Form Modal -->
+    <div class="modal fade" id="applicationModal" tabindex="-1" role="dialog" aria-labelledby="applicationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="./assets/Logo/Logo.svg" alt="" style="width: 100px;">
+                    <h5 class="modal-title" id="applicationModalLabel" style="margin-top: 20px;">Application Form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="applicationForm">
+                        <div class="row">
+                            <div class="col-sm-12 mt-3 mb-3" style="text-align: center;">
+                                <h5>International Degree Now in Your Budget</h5>
+                            </div>
+                            <div class="col-sm-12">
+                                <div style="text-align: center; font-size: 19px; font-weight: 600; color: #17a184;">
+                                    Degree Interested in<span>*</span>
+                                </div>
+                                <div class="d-flex kkkkk">
+                                    <button type="button" id="mastersButton" class="btns">Masters</button>
+                                    <button type="button" id="bachelorsButton" class="btns">Bachelors</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 mt-3">
+                                <label for="name">Name:<span>*</span></label>
+                            </div>
+                            <div class="col-sm-9 mt-3">
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Enter your name" required>
+                                <span id="nameError" class="error"></span>
+                            </div>
+                            <div class="col-sm-3 mt-3">
+                                <label for="email">Email:<span>*</span></label>
+                            </div>
+                            <div class="col-sm-9 mt-3">
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Enter your email" required>
+                                <span id="emailError" class="error"></span>
+                            </div>
+                            <div class="col-sm-3 mt-3">
+                                <label for="number">Mobile:<span>*</span></label>
+                            </div>
+                            <div class="col-sm-9 mt-3 mb-3">
+                                <input type="tel" class="form-control" id="contact" name="contact"
+                                    placeholder="Enter your phone number" required>
+                                <span id="contactError" class="error"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12" style="display: flex; justify-content: center; margin-bottom: 10px;">
+                                <button type="submit" class="btn btn-primary btn-block"
+                                    style="background-color: #17a184; width: 100%;">Book Your Free Counseling</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const mastersButton = document.getElementById('mastersButton');
+            const bachelorsButton = document.getElementById('bachelorsButton');
+
+            mastersButton.addEventListener('click', (event) => {
+                event.preventDefault();
+                mastersButton.classList.add('active');
+                bachelorsButton.classList.remove('active');
+            });
+
+            bachelorsButton.addEventListener('click', (event) => {
+                event.preventDefault();
+                bachelorsButton.classList.add('active');
+                mastersButton.classList.remove('active');
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.querySelector('.studyabroad .slider');
+            const items = document.querySelectorAll('.studyabroad .item');
+            const numItems = items.length;
+            const itemWidth = items[0].offsetWidth;
+            const totalWidth = itemWidth * numItems;
+
+            // Clone items to fill the slider
+            for (let i = 0; i < numItems; i++) {
+                const clone = items[i].cloneNode(true);
+                slider.appendChild(clone);
+            }
+
+            // Set the width of the slider to accommodate all items
+            slider.style.width = `${totalWidth * 2}px`;
+
+            // Add the class to start the animation 
+            setTimeout(() => {
+                slider.classList.add('slider-move');
+            }, 100);  // Small delay to ensure all items are in place
+        });
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var currentIndex = 0;
+            var cardsPerPage = 5;
+
+            $("#nextButton").click(function () {
+                var totalCards = $(".card-group .card").length;
+                if (currentIndex < totalCards - cardsPerPage) {
+                    currentIndex++;
+                    showHideButtons();
+                    showHideCards();
+                }
+            });
+
+            $("#prevButton").click(function () {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    showHideButtons();
+                    showHideCards();
+                }
+            });
+
+            function showHideButtons() {
+                $("#prevButton").toggle(currentIndex > 0);
+                $("#nextButton").toggle($(".card-group .card").length > currentIndex + cardsPerPage);
+            }
+
+            function showHideCards() {
+                $(".card-group .card").hide();
+                $(".card-group .card").slice(currentIndex, currentIndex + cardsPerPage).show();
+            }
+
+            showHideButtons();
+            showHideCards();
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const applicationForm = document.getElementById('applicationForm');
+
+            applicationForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Clear previous errors
+                document.getElementById('nameError').textContent = '';
+                document.getElementById('emailError').textContent = '';
+                document.getElementById('contactError').textContent = '';
+
+                // Get form values
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const contact = document.getElementById('contact').value.trim();
+
+                // Validate form fields
+                let isValid = true;
+
+                // Name validation
+                if (name === '') {
+                    document.getElementById('nameError').textContent = 'Name is required.';
+                    isValid = false;
+                }
+
+                // Email validation
+                const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,6}$/;
+                if (!emailPattern.test(email)) {
+                    document.getElementById('emailError').textContent = 'Invalid email format.';
+                    isValid = false;
+                }
+
+                // Contact validation
+                const contactPattern = /^[0-9]{10}$/;
+                if (!contactPattern.test(contact)) {
+                    document.getElementById('contactError').textContent = 'Invalid phone number. Must be 10 digits.';
+                    isValid = false;
+                }
+
+                // If valid, submit form data to the API
+                if (isValid) {
+                    const formData = new FormData(applicationForm);
+
+                    // Log the FormData object to the console to verify its contents
+                    console.log([...formData.entries()]);
+
+                    const requestOptions = {
+                        method: 'POST',
+                        body: formData
+                    };
+
+                    fetch('https://gambleland.online/api/restapi/education_leads.php', requestOptions)
+                        .then((response) => {
+                            if (!response.ok) {
+                                throw new Error('There was a problem with your submission.');
+                            }
+                            return response.text();
+                        })
+                        .then((result) => {
+                            // Handle successful form submission
+                            console.log(result);
+                            applicationForm.reset();
+                            alert('Form submitted successfully!');
+                        })
+                        .catch((error) => {
+                            // Handle errors
+                            console.error('There was an error submitting the form:', error);
+                            alert('There was an error submitting the form. Please try again later.');
+                        });
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
